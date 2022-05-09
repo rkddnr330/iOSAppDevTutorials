@@ -11,6 +11,10 @@
 		776F4BA928267ED6009DC650 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BA828267ED6009DC650 /* MeetingView.swift */; };
 		776F4BAB28267ED7009DC650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776F4BAA28267ED7009DC650 /* Assets.xcassets */; };
 		776F4BAE28267ED7009DC650 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776F4BAD28267ED7009DC650 /* Preview Assets.xcassets */; };
+		776F4BB72828F2F9009DC650 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BB62828F2F9009DC650 /* Theme.swift */; };
+		776F4BB92828F468009DC650 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BB82828F468009DC650 /* DailyScrum.swift */; };
+		776F4BBB2828F5F6009DC650 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BBA2828F5F6009DC650 /* CardView.swift */; };
+		776F4BBD2828FACD009DC650 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		776F4BA828267ED6009DC650 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		776F4BAA28267ED7009DC650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776F4BAD28267ED7009DC650 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		776F4BB62828F2F9009DC650 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		776F4BB82828F468009DC650 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		776F4BBA2828F5F6009DC650 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				776F4BA628267ED6009DC650 /* ScrumdingerApp.swift */,
-				776F4BB428268023009DC650 /* Ch1) SwiftUI Essentials */,
+				776F4BB52828F24A009DC650 /* Models */,
+				776F4BB428268023009DC650 /* Views */,
 				776F4BAA28267ED7009DC650 /* Assets.xcassets */,
 				776F4BAC28267ED7009DC650 /* Preview Content */,
 			);
@@ -67,12 +76,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		776F4BB428268023009DC650 /* Ch1) SwiftUI Essentials */ = {
+		776F4BB428268023009DC650 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				776F4BA828267ED6009DC650 /* MeetingView.swift */,
+				776F4BBA2828F5F6009DC650 /* CardView.swift */,
 			);
-			path = "Ch1) SwiftUI Essentials";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		776F4BB52828F24A009DC650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				776F4BB62828F2F9009DC650 /* Theme.swift */,
+				776F4BB82828F468009DC650 /* DailyScrum.swift */,
+				776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776F4BB92828F468009DC650 /* DailyScrum.swift in Sources */,
+				776F4BBD2828FACD009DC650 /* TrailingIconLabelStyle.swift in Sources */,
+				776F4BB72828F2F9009DC650 /* Theme.swift in Sources */,
 				776F4BA928267ED6009DC650 /* MeetingView.swift in Sources */,
 				776F4BA728267ED6009DC650 /* ScrumdingerApp.swift in Sources */,
+				776F4BBB2828F5F6009DC650 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
