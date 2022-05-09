@@ -7,11 +7,14 @@
 
 import Foundation
 
-struct DailyScrum {
+struct DailyScrum: Identifiable {
+    let id: UUID = UUID()
     var title: String
     var attendees: [String] //String으로 이루어진 List라는 의미를 '[String]'으로 표기
     var lengthInMinutes: Int
     var theme: Theme //Theme.swift에서 선언해준 enum 타입
+    
+    
 }
 
 //provide sample data
