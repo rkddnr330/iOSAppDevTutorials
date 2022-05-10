@@ -8,13 +8,14 @@
 import Foundation
 
 struct DailyScrum: Identifiable {
-    let id: UUID
+    let id: UUID //인스턴스 하나씩 다루기 위해
     var title: String
     var attendees: [Attendee] //String으로 이루어진 List라는 의미를 '[String]'으로 표기
     var lengthInMinutes: Int
     var theme: Theme //Theme.swift에서 선언해준 enum 타입
     
     //이거 custom initializer임
+    //매개변수 이니셜라이저
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme){
         self.id = id
         self.title = title

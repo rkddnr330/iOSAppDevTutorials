@@ -11,7 +11,7 @@ import SwiftUI
 //이때 @State wrapper 사용. 왜냐하면, 변경된 값 인식해서 View를 바로 그릴 것.
 struct DetailEditView: View {
     
-    @State private var data = DailyScrum.Data()
+    @Binding var data = DailyScrum.Data
     @State private var newAttendeeName: String = ""
     
     var body: some View {
@@ -25,6 +25,7 @@ struct DetailEditView: View {
                     Spacer()
                     Text("\(Int(data.lengthInMinutes)) Minutes")
                 }
+                ThemePicker(selection: $data.theme)
             }
             Section(header: Text("Attendees")){
                 ForEach(data.attendees) { attendee in
@@ -55,6 +56,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
     }
 }
