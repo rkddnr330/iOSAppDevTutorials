@@ -17,6 +17,7 @@
 		776F4BBD2828FACD009DC650 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */; };
 		776F4BBF2829062D009DC650 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BBE2829062D009DC650 /* ScrumsView.swift */; };
 		776F4BC128292603009DC650 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BC028292603009DC650 /* DetailView.swift */; };
+		776F4BC3282A7941009DC650 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BC2282A7941009DC650 /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		776F4BBE2829062D009DC650 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		776F4BC028292603009DC650 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		776F4BC2282A7941009DC650 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				776F4BBE2829062D009DC650 /* ScrumsView.swift */,
 				776F4BC028292603009DC650 /* DetailView.swift */,
 				776F4BBA2828F5F6009DC650 /* CardView.swift */,
+				776F4BC2282A7941009DC650 /* DetailEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				776F4BBD2828FACD009DC650 /* TrailingIconLabelStyle.swift in Sources */,
 				776F4BB72828F2F9009DC650 /* Theme.swift in Sources */,
 				776F4BBF2829062D009DC650 /* ScrumsView.swift in Sources */,
+				776F4BC3282A7941009DC650 /* DetailEditView.swift in Sources */,
 				776F4BA928267ED6009DC650 /* MeetingView.swift in Sources */,
 				776F4BA728267ED6009DC650 /* ScrumdingerApp.swift in Sources */,
 				776F4BBB2828F5F6009DC650 /* CardView.swift in Sources */,

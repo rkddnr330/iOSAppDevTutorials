@@ -36,6 +36,19 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
+    //이런 식으로 default값 지정해주면, 나중에 Data()라고 선언하면서 바로 쓸 수 있음
+    struct Data {
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 5
+        var theme: Theme = .seafoam
+    }
+    
+    var data: Data {
+        //밑에 코드 무슨 말이지 ..
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
 }
 
 //provide sample data
