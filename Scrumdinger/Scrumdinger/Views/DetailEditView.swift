@@ -11,7 +11,7 @@ import SwiftUI
 //이때 @State wrapper 사용. 왜냐하면, 변경된 값 인식해서 View를 바로 그릴 것.
 struct DetailEditView: View {
     
-    @Binding var data = DailyScrum.Data
+    @Binding var data : DailyScrum.Data
     @State private var newAttendeeName: String = ""
     
     var body: some View {
@@ -31,10 +31,12 @@ struct DetailEditView: View {
                 ForEach(data.attendees) { attendee in
                     Text(attendee.name)
                 }
+                
                 //Delete하는 코드
                 .onDelete{ indicies in
                     data.attendees.remove(atOffsets: indicies)
                 }
+                
                 HStack{
                     TextField("New Attendee", text:$newAttendeeName)
                     Button(action: {
