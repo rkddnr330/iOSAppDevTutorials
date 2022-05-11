@@ -31,10 +31,12 @@ struct DetailEditView: View {
                 ForEach(data.attendees) { attendee in
                     Text(attendee.name)
                 }
+                
                 //Delete하는 코드
                 .onDelete{ indicies in
                     data.attendees.remove(atOffsets: indicies)
                 }
+                
                 HStack{
                     TextField("New Attendee", text:$newAttendeeName)
                     Button(action: {
