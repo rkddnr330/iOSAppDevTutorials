@@ -13,7 +13,7 @@ struct DailyScrum: Identifiable {
     var attendees: [Attendee] //String으로 이루어진 List라는 의미를 '[String]'으로 표기
     var lengthInMinutes: Int
     var theme: Theme //Theme.swift에서 선언해준 enum 타입
-    
+    var history: [History] = []
     //이거 custom initializer임
     //매개변수 이니셜라이저
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme){
@@ -52,6 +52,14 @@ extension DailyScrum {
     }
     
     mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
+    }
+    
+    init(data: Data) {
+        id = UUID()
         title = data.title
         attendees = data.attendees
         lengthInMinutes = Int(data.lengthInMinutes)

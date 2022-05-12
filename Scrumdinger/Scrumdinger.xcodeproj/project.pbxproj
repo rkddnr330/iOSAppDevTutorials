@@ -24,6 +24,7 @@
 		776F4BCB282C97CC009DC650 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BCA282C97CC009DC650 /* ScrumProgressViewStyle.swift */; };
 		776F4BCD282C9916009DC650 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BCC282C9916009DC650 /* ScrumTimer.swift */; };
 		776F4BCF282C9C35009DC650 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BCE282C9C35009DC650 /* MeetingFooterView.swift */; };
+		776F4BD1282CAE91009DC650 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F4BD0282CAE90009DC650 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		776F4BCA282C97CC009DC650 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		776F4BCC282C9916009DC650 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		776F4BCE282C9C35009DC650 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		776F4BD0282CAE90009DC650 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				776F4BB62828F2F9009DC650 /* Theme.swift */,
 				776F4BCC282C9916009DC650 /* ScrumTimer.swift */,
 				776F4BB82828F468009DC650 /* DailyScrum.swift */,
+				776F4BD0282CAE90009DC650 /* History.swift */,
 				776F4BBC2828FACD009DC650 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Models;
@@ -202,6 +205,7 @@
 				776F4BB72828F2F9009DC650 /* Theme.swift in Sources */,
 				776F4BBF2829062D009DC650 /* ScrumsView.swift in Sources */,
 				776F4BC7282AAB48009DC650 /* ThemePicker.swift in Sources */,
+				776F4BD1282CAE91009DC650 /* History.swift in Sources */,
 				776F4BC3282A7941009DC650 /* DetailEditView.swift in Sources */,
 				776F4BA928267ED6009DC650 /* MeetingView.swift in Sources */,
 				776F4BA728267ED6009DC650 /* ScrumdingerApp.swift in Sources */,

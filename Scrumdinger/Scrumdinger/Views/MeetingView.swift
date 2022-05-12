@@ -52,6 +52,9 @@ struct MeetingView: View {
         ///onDisappear를 통해 stopScrum 함수 불러오기
         .onDisappear{
             scrumTimer.stopScrum()
+            ///회의 끝날 때 histoty에 저장하기 위한 코드
+            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrum.timer.secondsElapsed/60)
+            scrum.history.insert(newHistory, at: 0)
         }
         .navigationBarTitleDisplayMode(.inline)
     }
